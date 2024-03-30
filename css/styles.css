@@ -633,7 +633,6 @@ margin-bottom: 4px;
 }
 
 .modal-text {
-
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 width: 360px;
@@ -673,9 +672,14 @@ height: 16px;
 border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 margin-right: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
 }
 
 .modal-checkbox:checked + .checkbox-text span {
-width: 16px;
-height: 16px;
+background-color: #404bbf;
+border: none;
+fill: #f4f4fd;
 }
