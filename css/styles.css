@@ -573,7 +573,7 @@ color: #ffffff;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 16px;
+/* gap: 16px; */
 border-radius: 4px;
 padding: 8px 24px;
 background-color: #4D5AE5; 
@@ -588,6 +588,10 @@ border: none;
 min-width: 165px;
 height: 40px;
 cursor: pointer;
+}
+
+.footer-send-icon {
+margin-left: 16px;
 }
 
 /** ----------modal------------ */
