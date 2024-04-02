@@ -573,7 +573,6 @@ color: #ffffff;
 display: flex;
 align-items: center;
 justify-content: center;
-/* gap: 16px; */
 border-radius: 4px;
 padding: 8px 24px;
 background-color: #4D5AE5; 
@@ -643,16 +642,18 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 padding: 0;
 border-radius: 50%;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 fill: #e7e9fc;
 stroke-width: 1px;
 stroke: rgba(0, 0, 0, 0.1);
 }
 
-.modal-close:hover, .modal-close:focus, .modal-close-icon:hover, .modal-close-icon:focus {  
-fill: #ffffff; 
+.modal-close:hover, .modal-close:focus {
 border: none;
 background-color: #404bbf;
+}
+
+.modal-close:hover .modal-close-icon, .modal-close:focus .modal-close-icon {
+fill: #ffffff;
 }
 
 .modal-close-icon {
@@ -675,6 +676,10 @@ width: 360px;
 min-height: 24px;
 margin-bottom: 16px;
 margin-top: 24px;
+}
+
+.modal-field {
+margin-bottom: 8px;
 }
 
 .modal-label {
@@ -713,11 +718,11 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
 }
 
-.modal-input:active, .modal-input:focus {
+.modal-input:focus {
 border-color: #4d5ae5;
 }
 
-.modal-input:active + .modal-icon {
+.modal-input:focus + .modal-icon {
 fill: #4D5AE5;
 }
 
@@ -725,7 +730,7 @@ fill: #4D5AE5;
 display: block;
 border-radius: 4px;
 padding: 16px 32px;
-width: 169px;
+max-width: 169px;
 height: 56px;
 background-color: #4d5ae5;
 font-family: "Roboto", sans-serif;
@@ -735,9 +740,12 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
-margin-top: 24px;
 border: none;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.modal-field-textarea {
+margin-bottom: 16px;
 }
 
 .modal-text {
@@ -745,7 +753,6 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 width: 360px;
 height: 120px;
-margin-bottom: 21px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 outline: transparent;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -762,8 +769,11 @@ padding: 8px 16px;
 border-color: #4D5AE5;
 }
 
+.modal-field-checkbox {
+margin-bottom: 24px;
+}
+
 .checkbox-text {
-display: flex;
 align-items: center;
 font-size: 12px;
 line-height: 1.17;
@@ -784,11 +794,12 @@ height: 16px;
 border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 margin-right: 8px;
-display: flex;
+display:inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-checkbox:checked + .checkbox-text span {
