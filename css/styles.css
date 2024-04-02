@@ -730,7 +730,7 @@ fill: #4D5AE5;
 display: block;
 border-radius: 4px;
 padding: 16px 32px;
-max-width: 169px;
+min-width: 169px;
 height: 56px;
 background-color: #4d5ae5;
 font-family: "Roboto", sans-serif;
@@ -788,7 +788,7 @@ text-decoration-skip-ink: none;
 color: #4d5ae5;
 }
 
-.checkbox-text span {
+.checkbox-text-span {
 width: 16px;
 height: 16px;
 border-radius: 2px;
